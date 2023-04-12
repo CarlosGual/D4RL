@@ -16,6 +16,7 @@ try:
     import d4rl.pointmaze
     import d4rl.gym_minigrid
     import d4rl.gym_mujoco
+    import d4rl.habitat
 except ImportError as e:
     if not SUPPRESS_MESSAGES:
         print(_ERROR_MESSAGE % 'Mujoco-based envs', file=sys.stderr)
