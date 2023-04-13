@@ -1,6 +1,7 @@
 import h5py
 import numpy as np
 
+
 class DatasetWriter(object):
     def __init__(self, mujoco=False, goal=False):
         self.mujoco = mujoco
