@@ -1165,7 +1165,7 @@ class MiniGridEnv(offline_env.OfflineEnv):
 
         topX, topY, botX, botY = self.get_view_exts()
 
-        grid = self.grid.update(topX, topY, self.agent_view_size, self.agent_view_size)
+        grid = self.grid.rollout(topX, topY, self.agent_view_size, self.agent_view_size)
 
         for i in range(self.agent_dir + 1):
             grid = grid.rotate_left()
